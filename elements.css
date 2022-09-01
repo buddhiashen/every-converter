@@ -1,0 +1,373 @@
+/* CSS */
+.button-3 {
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .button-3:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .button-3:hover {
+    background-color: #2c974b;
+  }
+  
+  .button-3:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+  
+  .button-3:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+  .button-3:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }
+
+
+  pre {
+    display: block;
+    padding: 9.5px;
+      padding-top: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #232323;
+    border: 1px solid #232323;
+    border-radius: 4px;
+  }
+
+
+  .lenght_sec{
+    max-width: max-content;
+    max-height: max-content;
+    margin-top: 75px;
+
+    padding: 10px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .lenght{
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    padding: 15px;
+  }
+  .temp{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+.pixels{
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+
+.accordion > input[name="collapse"] {
+  display: none;
+  
+  /*position: absolute;
+  left: -100vw;*/
+}
+
+.accordion label,
+.accordion .content{
+ max-width: 620px;
+  margin: 0 auto;
+ }
+
+
+.accordion .content {
+
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  height: 380px;
+  transition: height 0.5s;
+}
+
+.accordion label {
+  display: block;
+ 
+}
+
+
+/* For Desktop */
+@media only screen and (min-width: 620px){
+
+
+.accordion1 > input[name="collapse"]:checked ~ .content {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  padding-top: 35px;
+  height: 130px;
+}
+
+
+.accordion2 > input[name="collapse"]:checked ~ .content {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  padding-top: 35px;
+  height: 130px;
+}
+
+.accordion3 > input[name="collapse"]:checked ~ .content {
+  background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+  padding-top: 35px;
+  height: 130px;
+}
+
+}
+
+
+
+.accordion {
+  margin-bottom: 1em;
+}
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  border-top: 0;
+  transition: 0.3s;
+}
+
+.accordion .handle {
+  margin: 0;
+  font-size: 16px;
+  
+}
+
+.accordion label {
+  color: #fff;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 10px;
+  background: #298e46;;
+  user-select: none;
+  
+}
+
+.accordion1 label {
+  color: #fff;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 10px;
+  background: #298e46;;
+  user-select: none;
+  
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  background: #2c974b;
+}
+
+.accordion .handle label:before {
+  font-family: FontAwesome;
+  content: "\f107";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1em;
+  line-height: 1.556em;
+  vertical-align: middle;
+  transition: 0.4s;
+  
+}
+
+.accordion > input[name="collapse"]:checked ~ .handle label:before {
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: 0.4s;
+}
+
+
+@media screen and (max-width: 600px){
+
+
+  .accordion1 > input[name="collapse"]:checked ~ .content {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    padding-top: 35px;
+    height: 230px;
+  }
+  
+  
+  .accordion2 > input[name="collapse"]:checked ~ .content {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding-top: 35px;
+    height: 260px;
+  }
+  
+  .accordion3 > input[name="collapse"]:checked ~ .content {
+    background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+    padding-top: 35px;
+    height: 130px;
+  }
+  
+  }
+  
+  
+  
+  .accordion {
+    margin-bottom: 1em;
+  }
+  
+  .accordion > input[name="collapse"]:checked ~ .content {
+    border-top: 0;
+    transition: 0.3s;
+  }
+  
+  .accordion .handle {
+    margin: 0;
+    font-size: 16px;
+    
+  }
+  
+  .accordion label {
+    color: #fff;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 10px;
+    background: #298e46;;
+    user-select: none;
+    
+  }
+  
+  .accordion1 label {
+    color: #fff;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 10px;
+    background: #298e46;;
+    user-select: none;
+    
+  }
+  
+  .accordion label:hover,
+  .accordion label:focus {
+    background: #2c974b;
+  }
+  
+  .accordion .handle label:before {
+    font-family: FontAwesome;
+    content: "\f107";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1em;
+    line-height: 1.556em;
+    vertical-align: middle;
+    transition: 0.4s;
+    
+  }
+  
+  .accordion > input[name="collapse"]:checked ~ .handle label:before {
+      transform: rotate(180deg);
+      transform-origin: center;
+      transition: 0.4s;
+  }
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+a {
+  color: #06c;
+}
+
+p {
+  margin: 0 0 1em;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0 0 1.5em;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
+}
+.container{
+    max-width: 620px;
+    margin: 0 auto;
+}
+  
+  button{
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+
+
+  @media (max-width: 750px) {
+    .lenght_sec{
+        margin-top: 150px;
+        bottom: 50px;
+        width: 85%;
+        height: 300px;
+
+    }
+
+    
+    .lenght{
+        width: 350px;
+        margin-bottom: 25px;
+    }
+    .temp{
+      margin-bottom: 25px;
+    }
+    .button-3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        column-gap: 10px;
+        margin-bottom: 5px;
+    }
+  }

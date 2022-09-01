@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every conveter - Yards to other</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h4>Can a image contain negative value of pixels ?
+            what does negative value of pixels in a image mean?</h4><br>
+            <p>
+                Yes, as a generality, images can contain pixels with negative values.
+If I recall correctly, if you look at the diagrams of color representation as perceived by the human eye, and you look at how they define RGB coordinates, then there are some colors that humans can perceive that would have to be modeled as negative coordinates. RGB and the other color spaces in common use in image file formats, are approximations of what we can really see, and since approximations are imperfect, some colors visible to humans (at least under perfect conditions) fall outside the models.
+Ask yourself this: what color is infrared in RGB coordinates? It doesn't fit. But you might have taken an image with a camera that is sensitive to infrared as well as to visible optics, so you might want to deal in negative coordinates.
+Pixel values are interpreted, part of a mathematical model, and need not represent real measurements in physics -- or might represent measurements whose zero point was originally determined before all oddities were known, leading to some negative readings.
+Example: if you were taking astronomical pictures, it might make sense in some contexts to use stars' apparent magnitude as the pixel values. If one excludes the Sun and planets, that still leaves a small number of stars (about half a dozen at most) that would have negative values.
+            </p>
+      </div>
+    
+    </div>
+
+
+
+    <div class="converter">
+        <h3>Convert from Pixels to other Measurements</h3>
+        <br>
+        <ul>
+        <h4>For modern browsers,
+
+            <li>1 rem = 16 px Therefore, 1px = 0.0625 rem</li> 
+            
+            <li> 1 em = 16 px Therefore, 1 px = 0.0625 em</li><br>
+
+           
+        </h4>
+        </ul><br>
+            <label id="Inchconv">Pixels : </label>
+            <input type="number" name="centimeter" id="cm_input" oninput="pixel_conv(this.value)" onchange="pixel_conv(this.value)">
+
+            <br><br>
+            <p>Convert from Pixels to rem/em (rem/em) :<b> <span id ="output_pix_to_rem"></span> rem/em</b></p>
+            <p>Convert from Pixels to points (pt) : <b><span id ="output_pix_to_pt"></span> pt</b></p>
+
+            
+    </div>
+
+    <div class="btn">
+        <a href="../index.html"><button class="button-3" role="button">   <i class="fa fa-angle-double-left" style="font-size:18px">  back to home</i> </button></a>
+    <!-- HTML !-->
+    </div>
+    
+
+</body>
+<script src="./func.js"></script>
+</html>

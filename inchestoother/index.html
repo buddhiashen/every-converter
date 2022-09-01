@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every conveter - Inches to other</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="converter">
+        <h3>Convert from Inches to other Measurements</h3>
+            <label id="Inchconv">Inches : </label>
+            <input type="number" name="inch" id="inch_input" oninput="inch_converter(this.value)" onchange="inch_converter(this.value)">
+
+            <br><br>
+            <p>Convert from Inches to Feet(ft) : <b><span id ="output_in_to_ft"></span> ft</b></p>
+            <p>Convert from Inches to Meters (m) : <b><span id ="output_in_to_in"></span> m</b></p>
+            <p>Convert from Inches to cm (cm) : <b><span id ="output_in_to_cm"></span> cm</b></p>
+            <p>Convert from Inches to Yards (yd) : <b><span id ="output_in_to_yd"></span> yd</b></p>
+            <p>Convert from Inches to Kilometers (km) : <b><span id ="output_in_to_km"></span> km</b></p>
+            <p>Convert from Inches to Miles (mi) : <b><span id ="output_in_to_mi"></span> mi</b></p>
+    </div>
+    <div class="btn">
+        <a href="../index.html"><button class="button-3" role="button">   <i class="fa fa-angle-double-left" style="font-size:18px">  back to home</i> </button></a>
+    <!-- HTML !-->
+    </div>
+
+</body>
+<script src="./func.js"></script>
+</html>

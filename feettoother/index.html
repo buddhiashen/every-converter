@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every conveter - Feet to other</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="converter">
+    <h3>Convert from Feet to other Measurements</h3>
+    <br>
+            <label id="lenghtconv">Feet : </label>
+            <input type="number" name="feet" id="feet_input" oninput="feet_converter(this.value)" onchange="feet_converter(this.value)">
+            <br><br>
+
+
+
+            <p>Convert from Feet to Meters (m) : <b><span id="outputMeters"></span> m</b></p> 
+            <p>Convert from Feet to Inches (in) : <b><span id="outputInches"></span> in</b></p> 
+            <p>Convert from Feet to cm (cm) : <b><span id="outputcm"></span> cm</b></p> 
+            <p>Convert from Feet to Yards (yd) : <b><span id="outputyard"> </span> yd</b></p> 
+            <p>Convert from Feet to Kilometers (km) : <b><span id ="outputkm"></span> km</b></p>
+    </div>
+    <div class="btn">
+        <a href="../index.html"><button class="button-3" role="button">   <i class="fa fa-angle-double-left" style="font-size:18px">  back to home</i> </button></a>
+    <!-- HTML !-->
+    </div>
+</body>
+<script src="./func.js"></script>
+</html>
